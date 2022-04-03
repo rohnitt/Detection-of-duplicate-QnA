@@ -22,3 +22,29 @@ there are plenty of NLP machine learning tutorials out there.Once we have an NLP
 understanding software you can then run through all the questions and push the output
 data to another machine learning software, One that can identify contextual similarity
 patterns from your data.
+
+...........Conclusion...........
+
+After testing out 5 models we see that on average Random Forest model shows better
+result overall most of the cases .
+We can conclude that the models based on homogeneous ensembling feature works better on the dataset that we have taken for out project. A universal rule of thumb:
+• Homogeneous ensembles use the same feature selection with a variety of data and
+distribute the dataset over several nodes.
+• Heterogeneous ensembles use different feature selection methods with the same data
+We are getting around 80 percent accuracy with random forest which is quite good
+for a ML model, from here on adding new features would result in exponentially slow
+improvement on the accuracy of the model.
+The model could do better if we include few more advanced features like distance features in the future.
+Another way, Quora could achieve a better by pre-processing the original question pair
+dataset. Since knowing the context in which question is asked, a proper replacement of
+some of the pronouns can be done, and higher accuracy can be achieved.
+For example, pronoun like us, we, they can be replaced if the topic under which question
+exists thus replacing it with their relative context like “American,” “ Programmers ”
+and “ Prisoners ’ etc. during the pre- processing data stage can help achieve a better
+result.
+As we are unaware in which context questions were asked we could not do such preprocessing on the original dataset.
+Increasing the batch sizes usually yields better results, as the task gets harder. It is
+more difficult to identify the correct duplicate question out of a set of 100 questions
+than out of a set of only 10 questions.
+So it is advisable to set the training batch size as large as possible. I trained it with a
+batch size of 20000 on 8 GB GPU memory
